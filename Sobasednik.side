@@ -1,0 +1,187 @@
+{
+  "id": "66f4bf1f-9c0b-400e-8184-05158d823b64",
+  "version": "2.0",
+  "name": "Sobasednik",
+  "url": "https://qahacking.guru/",
+  "tests": [{
+    "id": "d61d2c8b-8f37-4123-ab83-e53a67753c53",
+    "name": "Sobastest",
+    "commands": [{
+      "id": "4457f604-1741-499b-bc66-b637d25e32a0",
+      "comment": "",
+      "command": "open",
+      "target": "https://qahacking.guru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8bbb1bc3-cde8-45fc-abbc-819f05e7c880",
+      "comment": "",
+      "command": "click",
+      "target": "css=.uk-open:nth-child(1)",
+      "targets": [
+        ["css=.uk-open:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Магазин')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/index.php/magazin')])[4]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ca6c567-626e-40c9-b20c-03c019c8ff2d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.uk-open:nth-child(1)",
+      "targets": [
+        ["css=.uk-open:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Магазин')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/index.php/magazin')])[4]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad0c54c4-8f73-4320-8af4-aae4298f9984",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Купить",
+      "targets": [
+        ["linkText=Купить", "linkText"],
+        ["css=.productitem_4 .btn-success", "css:finder"],
+        ["xpath=//a[contains(text(),'Купить')]", "xpath:link"],
+        ["xpath=//div[@id='comjshop_list_product']/div/div/div/div/div[3]/div[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/index.php/magazin/korzina/add?category_id=1&product_id=4')]", "xpath:href"],
+        ["xpath=//div[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Купить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcae43b5-bc4c-463a-8511-9f304f78de4b",
+      "comment": "",
+      "command": "click",
+      "target": "name=quantity[0]",
+      "targets": [
+        ["name=quantity[0]", "name"],
+        ["css=.inputbox:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='quantity[0]']", "xpath:attributes"],
+        ["xpath=//div[@id='comjshop']/form/table/tbody/tr[2]/td[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58037b70-b10c-41de-928b-e3de6c84895d",
+      "comment": "",
+      "command": "type",
+      "target": "name=quantity[0]",
+      "targets": [
+        ["name=quantity[0]", "name"],
+        ["css=.inputbox:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='quantity[0]']", "xpath:attributes"],
+        ["xpath=//div[@id='comjshop']/form/table/tbody/tr[2]/td[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "a499066e-ff8d-4183-a560-53e927f48bd1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart_reload > img",
+      "targets": [
+        ["css=.cart_reload > img", "css:finder"],
+        ["xpath=//img[@alt='Обновить корзину']", "xpath:img"],
+        ["xpath=//img[@onclick='document.updateCart.submit();']", "xpath:attributes"],
+        ["xpath=//div[@id='comjshop']/form/table/tbody/tr[2]/td[4]/div[2]/span/img", "xpath:idRelative"],
+        ["xpath=//span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "718608f6-dea7-4232-9732-060fd3583a88",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Оформить заказ",
+      "targets": [
+        ["linkText=Оформить заказ", "linkText"],
+        ["css=.btn-arrow-right", "css:finder"],
+        ["xpath=//a[contains(text(),'Оформить заказ')]", "xpath:link"],
+        ["xpath=//div[@id='checkout']/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/index.php/component/jshopping/checkout/step2?Itemid=0')]", "xpath:href"],
+        ["xpath=//div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Оформить заказ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4b9418f-e3b3-45c5-be20-67f360d8ebba",
+      "comment": "",
+      "command": "click",
+      "target": "name=next",
+      "targets": [
+        ["name=next", "name"],
+        ["css=.button", "css:finder"],
+        ["xpath=//input[@name='next']", "xpath:attributes"],
+        ["xpath=//div[@id='comjshop']/div/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//form/div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36050f3c-7e23-41e5-96ad-d5473d17fd5e",
+      "comment": "",
+      "command": "click",
+      "target": "id=payment_submit",
+      "targets": [
+        ["id=payment_submit", "id"],
+        ["name=payment_submit", "name"],
+        ["css=#payment_submit", "css:finder"],
+        ["xpath=//input[@id='payment_submit']", "xpath:attributes"],
+        ["xpath=//form[@id='payment_form']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32d71d54-4520-4760-bac2-9ffc80b633fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//input[@value='Далее']", "xpath:attributes"],
+        ["xpath=//form[@id='shipping_form']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da306b03-014d-4e58-b3d7-924c4456492e",
+      "comment": "",
+      "command": "click",
+      "target": "id=agb",
+      "targets": [
+        ["id=agb", "id"],
+        ["name=agb", "name"],
+        ["css=#agb", "css:finder"],
+        ["xpath=//input[@id='agb']", "xpath:attributes"],
+        ["xpath=//div[@id='comjshop']/div[2]/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9720e504-60d0-4642-8bae-745798557f74",
+      "comment": "",
+      "command": "click",
+      "target": "name=finish_registration",
+      "targets": [
+        ["name=finish_registration", "name"],
+        ["css=.button", "css:finder"],
+        ["xpath=//input[@name='finish_registration']", "xpath:attributes"],
+        ["xpath=//div[@id='comjshop']/div[2]/form/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6bf5e1f2-cade-442d-9b72-5180c13d8dce",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d61d2c8b-8f37-4123-ab83-e53a67753c53"]
+  }],
+  "urls": ["https://qahacking.guru/"],
+  "plugins": []
+}
